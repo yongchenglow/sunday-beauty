@@ -17,6 +17,7 @@
 
 # misc
 .DS_Store
+*.pem
 
 # debug
 npm-debug.log*
@@ -29,3 +30,36 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# vercel
+.vercel
+
+# graphql-let
+.cache
+*.graphql.d.ts
+*.graphqls.d.ts
+
+# betterer
+.betterer.results
+
+# git
+.gitignore
+
+# prettier
+.prettierignore
+
+# license
+LICENSE
+
+# yarn
+yarn.lock
+
+# node version
+.nvmrc
+
+# docker
+.dockerignore
+Dockerfile
+
+#storybook
+/storybook-static
