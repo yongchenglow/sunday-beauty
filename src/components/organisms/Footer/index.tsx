@@ -1,7 +1,7 @@
 import { Box, Container, Grid, useTheme, Typography } from '@mui/material';
 import HoverMuiLink from '@/src/components/atoms/HoverMuiLink';
 import { linkInfos } from '@/src/components/organisms/Footer/constants';
-import { pages } from '@/src/pages/constants';
+import { pages } from '@/src/components/constants';
 import Link from 'next/link';
 
 const Footer = () => {

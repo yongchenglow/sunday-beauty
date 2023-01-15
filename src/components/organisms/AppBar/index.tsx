@@ -1,4 +1,4 @@
-import { pages } from '@/src/pages/constants';
+import { pages } from '@/src/components/constants';
 import {
   AppBar,
   Container,
