@@ -4,12 +4,7 @@ import theme from '@/src/theme';
 import AppScript from './_scripts';
 import AppHead from './_head';
 import { NextPage } from 'next';
-import { Roboto } from '@next/font/google';
-
-const roboto = Roboto({
-  weight: ['300', '400', '500', '700'],
-  style: ['normal', 'italic'],
-});
+import roboto from '@/src/font';
 
 const App: NextPage<AppProps> = ({ Component, pageProps }) => {
   return (
