@@ -9,10 +9,13 @@ import {
 } from '@mui/material';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useIntl } from 'react-intl';
 
 const ResponsiveAppBar = () => {
   const theme = useTheme();
   const router = useRouter();
+  const intl = useIntl();
+
   return (
     <AppBar>
       <Container maxWidth="xl">
@@ -26,7 +29,7 @@ const ResponsiveAppBar = () => {
           >
             {pages.map((page) => (
               <Link
-                key={page.name}
+                key={page.name.id}
                 href={page.url}
                 style={{
                   textDecoration: 'none',
@@ -47,7 +50,7 @@ const ResponsiveAppBar = () => {
                     },
                   }}
                 >
-                  {page.name}
+                  {intl.formatMessage(page.name)}
                 </Button>
               </Link>
             ))}

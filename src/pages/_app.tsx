@@ -5,19 +5,22 @@ import AppScript from './_scripts';
 import AppHead from './_head';
 import { NextPage } from 'next';
 import roboto from '@/src/font';
+import { IntlProvider } from 'react-intl';
 
 const App: NextPage<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
-      <AppHead />
-      <ThemeProvider theme={theme}>
-        <AppScript />
-        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-        <CssBaseline />
-        <main className={roboto.className}>
-          <Component {...pageProps} />
-        </main>
-      </ThemeProvider>
+      <IntlProvider locale="en" defaultLocale="en">
+        <AppHead />
+        <ThemeProvider theme={theme}>
+          <AppScript />
+          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+          <CssBaseline />
+          <main className={roboto.className}>
+            <Component {...pageProps} />
+          </main>
+        </ThemeProvider>
+      </IntlProvider>
     </>
   );
 };
