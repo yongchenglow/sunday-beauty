@@ -1,17 +1,17 @@
 import ResponsiveAppBar from '@/src/components/organisms/AppBar';
 import Footer from '@/src/components/organisms/Footer';
-import { Box, Container } from '@mui/material';
-import React from 'react';
+import { Box } from '@mui/material';
+import { FunctionComponent, ReactNode } from 'react';
 
 interface Props {
-  children?: React.ReactNode;
+  children?: ReactNode;
 }
 
-const StandardLayout: React.FunctionComponent<Props> = ({ children }) => {
+const StandardLayout: FunctionComponent<Props> = ({ children }) => {
   return (
     <Box height="100vh" paddingTop={8} display="flex" flexDirection="column">
       <ResponsiveAppBar />
-      <Container maxWidth="xl">{children}</Container>
+      <Box>{children}</Box>
       <Footer />
     </Box>
   );

@@ -3,9 +3,11 @@ import HoverMuiLink from '@/src/components/atoms/HoverMuiLink';
 import { linkInfos } from '@/src/components/organisms/Footer/constants';
 import { pages } from '@/src/components/constants';
 import Link from 'next/link';
+import { FormattedMessage, useIntl } from 'react-intl';
 
 const Footer = () => {
   const theme = useTheme();
+  const intl = useIntl();
   return (
     <footer style={{ marginTop: 'auto' }}>
       <Box bgcolor="text.secondary" color="white" p={1} pt={1.5}>
@@ -19,7 +21,7 @@ const Footer = () => {
                   marginBottom: theme.spacing(1),
                 }}
               >
-                Book Now
+                <FormattedMessage id="book.now" defaultMessage="Book Now" />
               </Typography>
               {linkInfos.map((linkInfo) => (
                 <HoverMuiLink
@@ -59,7 +61,7 @@ const Footer = () => {
               >
                 {pages.map((page) => (
                   <Link
-                    key={page.name}
+                    key={page.name.id}
                     href={page.url}
                     style={{
                       textDecoration: 'none',
@@ -75,12 +77,18 @@ const Footer = () => {
                         },
                       }}
                     >
-                      {page.name}
+                      {intl.formatMessage(page.name)}
                     </Typography>
                   </Link>
                 ))}
                 <Typography sx={{ marginTop: theme.spacing(1.5) }}>
-                  Copyright © {new Date().getFullYear()} - Sunday Beauty
+                  <FormattedMessage
+                    id="copyright.year.sunday.beauty"
+                    defaultMessage="Copyright © {year} - Sunday Beauty"
+                    values={{
+                      year: new Date().getFullYear(),
+                    }}
+                  />
                 </Typography>
               </Box>
             </Grid>

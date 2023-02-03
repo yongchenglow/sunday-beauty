@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material/styles';
+import roboto from '@/src/font';
 
 // Create a theme instance.
 const theme = createTheme({
@@ -9,6 +10,9 @@ const theme = createTheme({
     secondary: {
       main: '#F0DBDB',
     },
+  },
+  typography: {
+    fontFamily: roboto.style.fontFamily,
   },
 });
 
