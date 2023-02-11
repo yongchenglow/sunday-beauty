@@ -5,32 +5,39 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 type LinkInformation = {
+  id: string;
   url: string;
-  icon: ReactElement<any, any>;
+  icon: ReactElement;
   text: string;
 };
 
 const linkInfos: LinkInformation[] = [
   {
+    id: 'whatsapp',
     url: 'https://wa.me/6590784506',
     icon: <WhatsAppIcon />,
     text: '(+65) 9078 4506',
   },
   {
+    id: 'email',
     url: 'mailto:sundaybeautysg@gmail.com?subject=Appointment',
     icon: <EmailIcon />,
     text: 'sundaybeautysg@gmail.com',
   },
   {
+    id: 'address',
     url: 'https://goo.gl/maps/kCRAJb7PjF4s95YZ8',
     icon: <LocationOnIcon />,
-    text: 'Canberra Drive, Singapore 268101',
+    text: '1 Canberra Drive, Singapore 768101',
   },
   {
+    id: 'instagram',
     url: 'https://www.instagram.com/sundaybeauty.sg/',
     icon: <InstagramIcon />,
     text: '@sundaybeauty.sg',
   },
 ];
 
-export { linkInfos };
+const contactInfos = linkInfos.filter((info) => info.id !== 'instagram');
+
+export { linkInfos, contactInfos };

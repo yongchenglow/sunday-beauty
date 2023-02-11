@@ -9,7 +9,12 @@ interface Props {
 
 const StandardLayout: FunctionComponent<Props> = ({ children }) => {
   return (
-    <Box height="100vh" paddingTop={8} display="flex" flexDirection="column">
+    <Box
+      height="100vh"
+      paddingTop={{ sm: 7, md: 8 }}
+      display="flex"
+      flexDirection="column"
+    >
       <ResponsiveAppBar />
       <Box>{children}</Box>
       <Footer />

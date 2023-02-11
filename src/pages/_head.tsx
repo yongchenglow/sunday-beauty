@@ -16,11 +16,11 @@ const AppHead = () => {
       <meta name="robots" content="index, follow" />
 
       <title>Sunday Beauty - Lash Extensions Singapore</title>
-      <link rel="icon" href="img/sunday_beauty_logo.png" />
+      <link rel="icon" href="img/sunday_beauty_logo_square.png" />
 
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://www.sundaybeauty.org" />
-      <meta property="og:image" content="img/sunday_beauty_logo.png" />
+      <meta property="og:url" content="https://www.sundaybeautysg.com" />
+      <meta property="og:image" content="img/sunday_beauty_logo_square.png" />
       <meta
         property="og:title"
         content="Sunday Beauty - Lash Extensions Singapore"
@@ -39,8 +39,8 @@ const AppHead = () => {
         name="twitter:description"
         content="Sunday Beauty is a Beauty Salon that specializes in Lash Extensions. We only use quality products to ensure that you obtain a long lash retention and satisfaction"
       />
-      <meta name="twitter:url" content="http://www.sundaybeauty.org" />
-      <meta name="twitter:image" content="img/sunday_beauty_logo.png" />
+      <meta name="twitter:url" content="http://www.sundaybeautysg.com" />
+      <meta name="twitter:image" content="img/sunday_beauty_logo_square.png" />
     </Head>
   );
 };
