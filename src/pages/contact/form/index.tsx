@@ -40,10 +40,10 @@ const ContactForm: FunctionComponent = () => {
     event.preventDefault();
     emailjs
       .sendForm(
-        'service_8kqqmbl',
-        'template_ewb9591',
+        process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID,
         form.current,
-        'z4A1cNeFcBICAT4U1',
+        process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY,
       )
       .then(
         (result) => {
