@@ -1,55 +1,17 @@
-import Section from '@/src/components/atoms/Section';
-import StandardLayout from '@/src/pages/layouts/standard';
-import { Box, Typography, useTheme } from '@mui/material';
-import { FormattedMessage } from 'react-intl';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import StandardLayout from '@/src/components/template/standard';
+import Banner from '@/src/components/molecules/Banner';
+import Questions from './Questions';
 
 const Index = () => {
-  const theme = useTheme();
   return (
     <StandardLayout>
-      <Section>
-        <Typography
-          variant="h2"
-          sx={{ textAlign: 'center', marginBottom: theme.spacing(2) }}
-        >
-          <FormattedMessage id="faq" defaultMessage="FAQ" />
-        </Typography>
-        <Box>
-          <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography>Question 1</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography>Question 2</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography>Question 3</Typography>
-            </AccordionSummary>
-          </Accordion>
-        </Box>
-      </Section>
+      <Banner
+        title="Frequently Asked Questions"
+        imageUrl="/img/lash_makup.jpg"
+        height={500}
+        backgroundPosition="top"
+      />
+      <Questions />
     </StandardLayout>
   );
 };

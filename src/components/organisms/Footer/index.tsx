@@ -10,7 +10,12 @@ const Footer = () => {
   const intl = useIntl();
   return (
     <footer style={{ marginTop: 'auto' }}>
-      <Box bgcolor="text.secondary" color="white" p={1} pt={1.5}>
+      <Box
+        bgcolor="text.secondary"
+        color={theme.palette.secondary.light}
+        p={1}
+        pt={1.5}
+      >
         <Container maxWidth="xl">
           <Grid container textAlign="center">
             <Grid item xs={12} sm={6}>
@@ -28,7 +33,7 @@ const Footer = () => {
                   href={linkInfo.url}
                   target="_blank"
                   underline="none"
-                  color="white"
+                  color={theme.palette.secondary.light}
                   my={0.5}
                   sx={{ display: 'block' }}
                   key={linkInfo.text}
@@ -71,9 +76,9 @@ const Footer = () => {
                     <Typography
                       sx={{
                         marginBottom: theme.spacing(0.5),
-                        color: 'white',
+                        color: theme.palette.secondary.light,
                         '&:hover': {
-                          color: theme.palette.text.primary,
+                          color: theme.palette.secondary.dark,
                         },
                       }}
                     >

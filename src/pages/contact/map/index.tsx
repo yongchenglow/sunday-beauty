@@ -6,8 +6,8 @@ const ContactLocation: FunctionComponent = () => {
     <div className={styles.mapouter}>
       <div className={styles.gmap_canvas}>
         <iframe
-          width="300"
-          height="400"
+          width="500"
+          height="350"
           id="gmap_canvas"
           src="https://maps.google.com/maps?q=1%20canberra&t=&z=15&ie=UTF8&iwloc=&output=embed"
           frameBorder="0"
