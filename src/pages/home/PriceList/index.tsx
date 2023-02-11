@@ -28,49 +28,48 @@ const PriceList = () => {
           >
             <FormattedMessage id="price.list" defaultMessage="Price List" />
           </Typography>
-          <Grid container spacing={3}>
-            {items.map((item) => (
-              <div key={item.name.id}>
-                <Grid item xs={7}>
+
+          {items.map((item) => (
+            <Grid container spacing={3} key={item.name.id}>
+              <Grid item xs={7}>
+                <Typography
+                  sx={{
+                    fontSize: theme.typography.h5.fontSize,
+                    fontWeight: theme.typography.fontWeightMedium,
+                  }}
+                >
+                  {intl.formatMessage(item.name)}
+                </Typography>
+                {item.description && (
                   <Typography
+                    variant="body2"
                     sx={{
-                      fontSize: theme.typography.h5.fontSize,
-                      fontWeight: theme.typography.fontWeightMedium,
+                      lineHeight: 1,
                     }}
                   >
-                    {intl.formatMessage(item.name)}
+                    {intl.formatMessage(item.description)}
                   </Typography>
-                  {item.description && (
-                    <Typography
-                      variant="body2"
-                      sx={{
-                        lineHeight: 1,
-                      }}
-                    >
-                      {intl.formatMessage(item.description)}
-                    </Typography>
-                  )}
-                </Grid>
-                <Grid item xs={5} textAlign="center">
-                  {item.price && (
-                    <Typography sx={{ fontSize: theme.typography.h5.fontSize }}>
-                      {item.price}
-                    </Typography>
-                  )}
-                  {item.priceDescription && (
-                    <Typography
-                      sx={{
-                        fontSize: theme.typography.h6.fontSize,
-                        lineHeight: '1.2',
-                      }}
-                    >
-                      {intl.formatMessage(item.priceDescription)}
-                    </Typography>
-                  )}
-                </Grid>
-              </div>
-            ))}
-          </Grid>
+                )}
+              </Grid>
+              <Grid item xs={5} textAlign="center">
+                {item.price && (
+                  <Typography sx={{ fontSize: theme.typography.h5.fontSize }}>
+                    {item.price}
+                  </Typography>
+                )}
+                {item.priceDescription && (
+                  <Typography
+                    sx={{
+                      fontSize: theme.typography.h6.fontSize,
+                      lineHeight: '1.2',
+                    }}
+                  >
+                    {intl.formatMessage(item.priceDescription)}
+                  </Typography>
+                )}
+              </Grid>
+            </Grid>
+          ))}
           <Box display="flex" justifyContent="center" mt={1}>
             <img
               src="img/sunday_beauty_logo_square.png"

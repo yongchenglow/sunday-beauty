@@ -21,7 +21,7 @@ const ContactForm: FunctionComponent = () => {
     fieldRequired: intl.formatMessage(validationErrorMessages.fieldRequired),
   } as const;
 
-  const [openSuccess, setOpenSuccess] = useState(true);
+  const [openSuccess, setOpenSuccess] = useState(false);
   const [openFail, setOpenFail] = useState(false);
 
   const handleClose = (
