@@ -33,12 +33,12 @@ const ResponsiveAppBar = () => {
                 href={page.url}
                 style={{
                   textDecoration: 'none',
-                  margin: theme.spacing(0, 3),
                 }}
                 scroll={page.name.id === 'about' ? false : true}
               >
                 <Button
                   sx={{
+                    margin: { sm: 0, md: theme.spacing(0, 3) },
                     color:
                       router.asPath === page.url
                         ? theme.palette.secondary.dark

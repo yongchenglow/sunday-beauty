@@ -30,7 +30,12 @@ const PriceList = () => {
           </Typography>
 
           {items.map((item) => (
-            <Grid container spacing={3} key={item.name.id}>
+            <Grid
+              container
+              my={3}
+              width={{ sm: '100%', md: theme.spacing(50) }}
+              key={item.name.id}
+            >
               <Grid item xs={7}>
                 <Typography
                   sx={{
@@ -70,6 +75,7 @@ const PriceList = () => {
               </Grid>
             </Grid>
           ))}
+
           <Box display="flex" justifyContent="center" mt={1}>
             <img
               src="img/sunday_beauty_logo_square.png"

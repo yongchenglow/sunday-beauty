@@ -18,8 +18,8 @@ const Index = () => {
         backgroundPosition="50% 30%"
       />
       <Section>
-        <Grid container spacing={3}>
-          <Grid item xs={6}>
+        <Grid container spacing={3} justifyContent="center">
+          <Grid item md={6}>
             <Box my={5}>
               {contactInfos.map((contactInfo) => (
                 <HoverMuiLink
@@ -47,9 +47,11 @@ const Index = () => {
                 </HoverMuiLink>
               ))}
             </Box>
-            <ContactLocation />
+            <Box display="flex" justifyContent="center">
+              <ContactLocation />
+            </Box>
           </Grid>
-          <Grid item xs={6} textAlign="center">
+          <Grid item md={6} textAlign="center">
             <Paper
               elevation={2}
               sx={{ padding: theme.spacing(3), maxWidth: theme.spacing(62.5) }}
