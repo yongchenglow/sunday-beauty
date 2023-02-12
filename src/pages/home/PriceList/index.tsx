@@ -1,32 +1,34 @@
-import Section from '@/src/components/atoms/Section';
 import { items } from '@/src/components/constants';
-import { Box, Grid, Paper, Typography, useTheme } from '@mui/material';
+import { cinzel } from '@/src/font';
+import { Box, Grid, Typography, useTheme } from '@mui/material';
 import { FormattedMessage, useIntl } from 'react-intl';
 
 const PriceList = () => {
   const intl = useIntl();
   const theme = useTheme();
   return (
-    <Section>
+    <Box
+      width="100%"
+      sx={{
+        backgroundColor: theme.palette.primary.main,
+        color: theme.palette.secondary.light,
+      }}
+    >
       <Box display="flex" justifyContent="center">
-        <Paper
+        <Box
           sx={{
             maxWidth: theme.spacing(60),
             padding: theme.spacing(5, 4),
-            backgroundColor: theme.palette.primary.main,
-            color: theme.palette.secondary.light,
-            borderRadius: theme.spacing(1),
           }}
-          elevation={2}
         >
           <Typography
             variant="h3"
-            style={{
+            sx={{
               textAlign: 'center',
               marginBottom: theme.spacing(3),
             }}
           >
-            <FormattedMessage id="price.list" defaultMessage="Price List" />
+            <FormattedMessage id="price.list" defaultMessage="Price List*" />
           </Typography>
 
           {items.map((item) => (
@@ -39,6 +41,7 @@ const PriceList = () => {
               <Grid item xs={7}>
                 <Typography
                   sx={{
+                    fontFamily: cinzel.style.fontFamily,
                     fontSize: theme.typography.h5.fontSize,
                     fontWeight: theme.typography.fontWeightMedium,
                   }}
@@ -49,6 +52,7 @@ const PriceList = () => {
                   <Typography
                     variant="body2"
                     sx={{
+                      fontFamily: cinzel.style.fontFamily,
                       lineHeight: 1,
                     }}
                   >
@@ -58,13 +62,19 @@ const PriceList = () => {
               </Grid>
               <Grid item xs={5} textAlign="center">
                 {item.price && (
-                  <Typography sx={{ fontSize: theme.typography.h5.fontSize }}>
+                  <Typography
+                    sx={{
+                      fontFamily: cinzel.style.fontFamily,
+                      fontSize: theme.typography.h5.fontSize,
+                    }}
+                  >
                     {item.price}
                   </Typography>
                 )}
                 {item.priceDescription && (
                   <Typography
                     sx={{
+                      fontFamily: cinzel.style.fontFamily,
                       fontSize: theme.typography.h6.fontSize,
                       lineHeight: '1.2',
                     }}
@@ -83,9 +93,14 @@ const PriceList = () => {
               style={{ height: 'auto', maxWidth: theme.spacing(18) }}
             />
           </Box>
-        </Paper>
+          <Box display="flex" justifyContent="center" mt={1}>
+            <Typography variant="caption">
+              *Prices are subjected to surcharge during festive seasons
+            </Typography>
+          </Box>
+        </Box>
       </Box>
-    </Section>
+    </Box>
   );
 };
 

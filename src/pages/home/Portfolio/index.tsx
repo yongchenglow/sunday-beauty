@@ -1,25 +1,39 @@
 import Section from '@/src/components/atoms/Section';
-import Script from 'next/script';
+import { portfolioImageURLs } from '@/src/components/constants';
+import useWindowDimensions from '@/src/hooks/use-window-dimention';
+import { Box } from '@mui/material';
+import Carousel from 'react-material-ui-carousel';
+import { chunk, uniqueId } from 'lodash';
 
 const Portfolio = () => {
+  const { width } = useWindowDimensions();
+  const sliceValue = width <= 600 ? 1 : width <= 900 ? 2 : 3;
+  const carousel = chunk(portfolioImageURLs, sliceValue);
   return (
     <Section title="Portfolio">
-      <div
-        className="embedsocial-hashtag"
-        data-ref="21020ba59827bb2cf4653e6fc0d1056ab45afbe6"
+      <Carousel
+        autoPlay
+        interval={6000}
+        animation="slide"
+        navButtonsAlwaysVisible={true}
       >
-        <a
-          className="feed-powered-by-es feed-powered-by-es-feed-new"
-          href="https://embedsocial.com/social-media-aggregator/"
-          target="_blank"
-          title="Widget by EmbedSocial"
-        >
-          Widget by EmbedSocial<span>→</span>{' '}
-        </a>
-      </div>
-      <Script id="instagram">
-        {`(function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript"));`}
-      </Script>
+        {carousel.map((images) => {
+          const slide = images.map((image) => (
+            <Box maxHeight="300px" key={image}>
+              <img src={image} style={{ height: '300px', width: 'auto' }} />
+            </Box>
+          ));
+          return (
+            <Box
+              display="flex"
+              justifyContent="space-evenly"
+              key={uniqueId('slide-')}
+            >
+              {slide}
+            </Box>
+          );
+        })}
+      </Carousel>
     </Section>
   );
 };

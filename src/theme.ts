@@ -1,8 +1,8 @@
 import { createTheme } from '@mui/material/styles';
-import roboto from '@/src/font';
+import { poppins } from '@/src/font';
 
 const typography = {
-  fontFamily: roboto.style.fontFamily,
+  fontFamily: poppins.style.fontFamily,
   h1: {
     fontSize: '3rem',
     fontWeight: 'medium',

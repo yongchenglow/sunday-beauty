@@ -2,8 +2,9 @@ import StandardLayout from '@/src/components/template/standard';
 import Banner from '@/src/components/molecules/Banner';
 import AboutUs from './home/AboutUs';
 import PriceList from './home/PriceList';
-// import Portfolio from './home/Portfolio';
-// import { Reviews } from '@mui/icons-material';
+import Portfolio from './home/Portfolio';
+import Instagram from './home/Instagram';
+import GoogleReviews from './home/GoogleReviews';
 
 const Index = () => {
   return (
@@ -11,14 +12,13 @@ const Index = () => {
       <Banner
         title="Sunday Beauty"
         imageUrl="/img/snow_lash.jpg"
-        subTitle="Guaranteed lash retention & satisfaction"
+        subTitle="A Sunday well spent brings a week of content!"
       />
       <AboutUs />
-      {/* <Portfolio /> */}
-
+      <Portfolio />
+      <Instagram />
       <PriceList />
-
-      {/* <Reviews /> */}
+      <GoogleReviews />
     </StandardLayout>
   );
 };
