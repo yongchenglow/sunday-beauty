@@ -79,109 +79,133 @@ const items: Item[] = [
 
 type FAQ = {
   question: MessageDescriptor;
-  answer: MessageDescriptor;
+  answer: MessageDescriptor[];
 };
 
 const faqs: FAQ[] = [
   {
     question: {
-      id: 'what.are.lash.extensions',
+      id: 'question.1',
       defaultMessage: 'What are lash extensions?',
     },
-    answer: {
-      id: 'lash.extensions.are.individual.synthetic.or.natural.hair.fibers.that.are.attached.to.each.of.your.natural.lashes.to.enhance.their.length.and.fullness',
-      defaultMessage:
-        'Lash extensions are individual synthetic or natural hair fibers that are attached to each of your natural lashes to enhance their length and fullness.',
-    },
+    answer: [
+      {
+        id: 'answer.1a',
+        defaultMessage:
+          'They are synthetic fibres which mimic real lashes that come in different length/ weight/curls and they are carefully applied to your natural lash during lash appointment.',
+      },
+      {
+        id: 'answer.1b',
+        defaultMessage:
+          'It can look natural or voluminous based on your preference and natural lash count. ',
+      },
+    ],
   },
   {
     question: {
-      id: 'how.long.do.lash.extensions.last',
-      defaultMessage: 'How long do lash extensions last?',
+      id: 'question.2',
+      defaultMessage: 'Do lash extensions damage natural lashes?',
     },
-    answer: {
-      id: 'lash.extensions.can.last.anywhere.from.2.8.weeks.depending.on.the.life.cycle.of.your.natural.lashes.and.the.aftercare.routine.',
-      defaultMessage:
-        'Lash extensions can last anywhere from 2-8 weeks, depending on the life cycle of your natural lashes and the aftercare routine.',
-    },
+    answer: [
+      {
+        id: 'answer.2',
+        defaultMessage:
+          'We will advise the intensity and lash length of lash extensions based on the client’s lash health and condition so that the lash extensions are not too heavy for the natural lashes to handle. Subsequently, if the application is done correctly with proper isolation, the lashes will not be damaged.',
+      },
+    ],
   },
   {
     question: {
-      id: 'are.lash.extensions.safe',
-      defaultMessage: 'Are lash extensions safe?',
+      id: 'question.3',
+      defaultMessage: 'How long do the lash extensions last?',
     },
-    answer: {
-      id: 'when.applied.correctly.by.a.trained.and.experienced.technician.lash.extensions.are.safe.for.your.natural.lashes.its.important.to.choose.a.salon.that.uses.high.quality.products.and.adheres.to.strict.hygiene.standards.',
-      defaultMessage:
-        "When applied correctly by a trained and experienced technician, lash extensions are safe for your natural lashes. It's important to choose a salon that uses high-quality products and adheres to strict hygiene standards.",
-    },
+    answer: [
+      {
+        id: 'answer.3',
+        defaultMessage:
+          'Everyone has different lash shedding rate but it will typically last for 4 to 6 weeks with good aftercare. A refill is recommended to be done after 2 to 2.5 weeks after the first session.',
+      },
+    ],
   },
   {
     question: {
-      id: 'what.should.i.do.to.prepare.for.my.lash.appointment',
-      defaultMessage: 'What should I do to prepare for my lash appointment?',
-    },
-    answer: {
-      id: 'it.is.recommended.to.avoid.using.oils.and.heavy.creams.around.your.eyes.prior.to.the.appointment.and.to.arrive.with.clean.lashes.free.of.any.makeup.',
+      id: 'question.4',
       defaultMessage:
-        'It is recommended to avoid using oils and heavy creams around your eyes prior to the appointment, and to arrive with clean lashes free of any makeup.',
+        'How to take care of the lash extensions/improve lash retention?',
     },
+    answer: [
+      {
+        id: 'answer.4',
+        defaultMessage:
+          'We cannot stress enough the importance of lash cleansing. Do cleanse the lashes with lash cleanser and brush after the lash appointment twice a day to maintain the hygiene of the lashes. Avoid swimming after the lash appointment too.',
+      },
+    ],
   },
   {
     question: {
-      id: 'how.long.does.the.appointment.take',
-      defaultMessage: 'How long does the appointment take?',
+      id: 'question.5',
+      defaultMessage: 'How long is usually a lash appointment?',
     },
-    answer: {
-      id: 'a.full.set.of.lash.extensions.can.take.anywhere.from.1.2.hours.while.a.touch.up.appointment.can.take.around.30.minutes.to.an.hour.',
-      defaultMessage:
-        'A full set of lash extensions can take anywhere from 1-2 hours, while a touch-up appointment can take around 30 minutes to an hour.',
-    },
+    answer: [
+      {
+        id: 'answer.5',
+        defaultMessage:
+          'It will take 1.5 to 2.5 hours for a lash appointment depending on the lash count of each client.',
+      },
+    ],
   },
   {
     question: {
-      id: 'can.i.wear.makeup.with.lash.extensions',
-      defaultMessage: 'Can I wear makeup with lash extensions?',
-    },
-    answer: {
-      id: 'yes.you.can.wear.makeup.with.lash.extensions.but.it.is.important.to.choose.oil.free.products.and.avoid.rubbing.your.eyes.as.this.can.damage.the.extensions.',
+      id: 'question.6',
       defaultMessage:
-        'Yes, you can wear makeup with lash extensions, but it is important to choose oil-free products and avoid rubbing your eyes, as this can damage the extensions.',
+        'Is it advisable to keep doing lash extensions? Will it damage my lashes?',
     },
+    answer: [
+      {
+        id: 'answer.6',
+        defaultMessage:
+          'As long as the lash extensions are done properly, you can literally get your lashes done for life.',
+      },
+    ],
   },
   {
     question: {
-      id: 'how.do.i.take.care.of.my.lash.extensions',
-      defaultMessage: 'How do I take care of my lash extensions?',
+      id: 'question.7',
+      defaultMessage: 'Can I still wear mascara after my lash appointment?',
     },
-    answer: {
-      id: 'avoiding.the.use.of.oil.based.products.keeping.your.lashes.dry.for.the.first.24.hours.after.the.appointment.and.gently.brushing.them.daily.can.help.extend.the.life.of.your.lash.extensions.',
-      defaultMessage:
-        'Avoiding the use of oil-based products, keeping your lashes dry for the first 24 hours after the appointment, and gently brushing them daily can help extend the life of your lash extensions.',
-    },
+    answer: [
+      {
+        id: 'answer.7',
+        defaultMessage:
+          'It is not advisable to wear mascara for hygiene and safety purpose. ',
+      },
+    ],
   },
   {
     question: {
-      id: 'can.i.swim.shower.or.exercise.with.lash.extensions',
+      id: 'question.8',
+      defaultMessage: 'Do you do lash refill from other salons?',
+    },
+    answer: [
+      {
+        id: 'answer.8',
+        defaultMessage:
+          "Yes, we will do refill from other salons if the lashes are up to our standard. Do send us your photo before your appointment and we'll examine and inform you if a lash removal is required.",
+      },
+    ],
+  },
+  {
+    question: {
+      id: 'question.9',
       defaultMessage: 'Can I swim, shower or exercise with lash extensions?',
     },
-    answer: {
-      id: 'yes.you.can.swim.shower.and.exercise.with.lash.extensions.but.it.is.important.to.avoid.direct.contact.with.water.for.the.first.24.hours.and.to.be.gentle.when.rubbing.your.eyes.',
-      defaultMessage:
-        'Yes, you can swim, shower and exercise with lash extensions, but it is important to avoid direct contact with water for the first 24 hours and to be gentle when rubbing your eyes.',
-    },
-  },
-  {
-    question: {
-      id: 'what.happens.if.i.have.an.allergic.reaction.to.the.adhesive',
-      defaultMessage:
-        'What happens if I have an allergic reaction to the adhesive?',
-    },
-    answer: {
-      id: 'if.you.experience.an.allergic.reaction.to.the.adhesive.it.is.important.to.seek.medical.attention.and.to.inform.your.technician.your.technician.can.help.you.determine.the.best.course.of.action.and.recommend.alternative.adhesives.if.necessary.',
-      defaultMessage:
-        'If you experience an allergic reaction to the adhesive, it is important to seek medical attention and to inform your technician. Your technician can help you determine the best course of action and recommend alternative adhesives if necessary.',
-    },
+    answer: [
+      {
+        id: 'answer.9',
+        defaultMessage:
+          'Yes, you can swim, shower and exercise with lash extensions, but it is important to wear goggles when swimming and do cleanse the lashes diligently after swimming and exercising.',
+      },
+    ],
   },
 ];
 

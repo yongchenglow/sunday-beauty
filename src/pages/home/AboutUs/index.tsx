@@ -27,27 +27,29 @@ const AboutUs = () => {
           <Grid item xs={12} sm={7} display="flex" alignItems="center">
             <Box textAlign="left" mx={2}>
               <Typography marginBottom={2} variant="body1">
-                At Sunday Beauty, I am dedicated to provide you with the highest
-                quality lash extensions and eye-enhancing services. We only the
-                best products to ensure that each set of lashes lasts long and
-                looks stunning.
+                Lisa Choi
+              </Typography>
+              <ul>
+                <li>Lash artist + founder of SundayBeauty since 2019</li>
+                <li>- 3x lash certification</li>
+                <li>
+                  - Bachelor of Environments (Property) – University of
+                  Melbourne, Australia
+                </li>
+              </ul>
+              <Typography marginBottom={2} variant="body1">
+                Lisa has been passionate about beauty products & industry since
+                she was a high school student. She was first introduced to
+                stick-on false lashes when she was a university student. To her
+                astonishment, she was amazed by how lashes can dramatically
+                elevate a person's attractiveness. Ever since then she started
+                getting lash extension services but none of the lash studios is
+                up to standards- be it hygiene, products used and lash
+                retention.
               </Typography>
               <Typography marginBottom={2} variant="body1">
-                From natural and subtle looks to bold and dramatic styles, we
-                have something for everyone. Our salon is designed to be a
-                relaxing and welcoming environment, where you can sit back,
-                unwind and let us take care of all your lash needs.
-              </Typography>
-              <Typography marginBottom={2} variant="body1">
-                We believe that every woman deserves to feel confident and
-                beautiful, and that's why we make it our mission to give you the
-                lashes of your dreams. With our commitment to excellence,
-                attention to detail, and personalized approach, you can trust
-                that your experience at Sunday Beauty will be unforgettable.
-              </Typography>
-              <Typography marginBottom={2} variant="body1">
-                Book your appointment with us today and see the difference for
-                yourself!
+                This has inspired her to create SundayBeauty, aiming to provide
+                the best possible service in the market.
               </Typography>
             </Box>
           </Grid>

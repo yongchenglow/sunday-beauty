@@ -12,7 +12,7 @@ const Footer = () => {
     <footer style={{ marginTop: 'auto' }}>
       <Box
         bgcolor="text.secondary"
-        color={theme.palette.secondary.light}
+        color={theme.palette.common.white}
         p={1}
         pt={1.5}
       >
@@ -68,6 +68,7 @@ const Footer = () => {
                   <Link
                     key={page.name.id}
                     href={page.url}
+                    scroll={page.name.id === 'about' ? false : true}
                     style={{
                       textDecoration: 'none',
                       margin: theme.spacing(0, 3),

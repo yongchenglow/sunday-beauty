@@ -15,7 +15,7 @@ const Questions = () => {
       <Box display="flex" justifyContent="center">
         <Box maxWidth="md">
           {faqs.map((faq) => (
-            <Accordion>
+            <Accordion key={faq.question.id}>
               <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                 <Typography
                   sx={{ fontWeight: theme.typography.fontWeightMedium }}
@@ -24,7 +24,14 @@ const Questions = () => {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>{intl.formatMessage(faq.answer)}</Typography>
+                {faq.answer.map((paragraph) => (
+                  <Typography
+                    key={paragraph.id}
+                    sx={{ marginBottom: theme.spacing(1) }}
+                  >
+                    {intl.formatMessage(paragraph)}
+                  </Typography>
+                ))}
               </AccordionDetails>
             </Accordion>
           ))}
