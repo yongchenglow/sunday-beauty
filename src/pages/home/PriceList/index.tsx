@@ -28,7 +28,7 @@ const PriceList = () => {
               marginBottom: theme.spacing(3),
             }}
           >
-            <FormattedMessage id="price.list" defaultMessage="Price List" />
+            <FormattedMessage id="price.list" defaultMessage="Price List*" />
           </Typography>
 
           {items.map((item) => (
@@ -92,6 +92,11 @@ const PriceList = () => {
               alt="Sunday Beauty"
               style={{ height: 'auto', maxWidth: theme.spacing(18) }}
             />
+          </Box>
+          <Box display="flex" justifyContent="center" mt={1}>
+            <Typography variant="caption">
+              *Prices are subjected to surcharge during festive seasons
+            </Typography>
           </Box>
         </Box>
       </Box>

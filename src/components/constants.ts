@@ -209,4 +209,13 @@ const faqs: FAQ[] = [
   },
 ];
 
-export { pages, validationErrorMessages, items, faqs };
+const portfolioImageURLs: string[] = [
+  '/img/portfolio1.jpeg',
+  '/img/portfolio2.jpeg',
+  '/img/portfolio3.jpeg',
+  '/img/portfolio4.jpeg',
+  '/img/portfolio5.jpeg',
+  '/img/portfolio6.jpeg',
+];
+
+export { pages, validationErrorMessages, items, faqs, portfolioImageURLs };

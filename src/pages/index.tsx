@@ -2,8 +2,9 @@ import StandardLayout from '@/src/components/template/standard';
 import Banner from '@/src/components/molecules/Banner';
 import AboutUs from './home/AboutUs';
 import PriceList from './home/PriceList';
-// import Portfolio from './home/Portfolio';
-// import GoogleReviews from './home/GoogleReviews';
+import Portfolio from './home/Portfolio';
+import Instagram from './home/Instagram';
+import GoogleReviews from './home/GoogleReviews';
 
 const Index = () => {
   return (
@@ -14,11 +15,10 @@ const Index = () => {
         subTitle="A Sunday well spent brings a week of content!"
       />
       <AboutUs />
-      {/* <Portfolio /> */}
-
+      <Portfolio />
+      <Instagram />
       <PriceList />
-
-      {/* <GoogleReviews /> */}
+      <GoogleReviews />
     </StandardLayout>
   );
 };
