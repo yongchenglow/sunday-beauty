@@ -11,7 +11,7 @@ const Index = () => {
     <StandardLayout>
       <Banner
         title="Sunday Beauty"
-        imageUrl="/img/snow_lash.jpg"
+        imageUrl="/img/lash_close_up.jpg"
         subTitle="A Sunday well spent brings a week of content!"
       />
       <AboutUs />

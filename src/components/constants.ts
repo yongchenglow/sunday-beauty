@@ -216,6 +216,8 @@ const portfolioImageURLs: string[] = [
   '/img/portfolio4.jpeg',
   '/img/portfolio5.jpeg',
   '/img/portfolio6.jpeg',
+  '/img/portfolio7.jpeg',
+  '/img/portfolio8.jpeg',
 ];
 
 export { pages, validationErrorMessages, items, faqs, portfolioImageURLs };
