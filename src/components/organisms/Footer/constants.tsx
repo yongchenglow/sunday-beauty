@@ -26,9 +26,9 @@ const linkInfos: LinkInformation[] = [
   },
   {
     id: 'address',
-    url: 'https://goo.gl/maps/kCRAJb7PjF4s95YZ8',
+    url: 'https://goo.gl/maps/X8zDmQHT21c2viFs6',
     icon: <LocationOnIcon />,
-    text: '1 Canberra Drive, Singapore 768101',
+    text: '21 Canberra Drive, Singapore 768076',
   },
   {
     id: 'instagram',

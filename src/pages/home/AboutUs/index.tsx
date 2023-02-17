@@ -15,7 +15,7 @@ const AboutUs = () => {
           <Grid item xs={8} sm={5} mb={3}>
             <Avatar
               alt="Lisa"
-              src="/img/lisa.jpg"
+              src="/img/lisa.jpeg"
               variant="rounded"
               sx={{
                 width: '100%',
@@ -31,10 +31,10 @@ const AboutUs = () => {
               </Typography>
               <ul>
                 <li>Lash artist + founder of SundayBeauty since 2019</li>
-                <li>- 3x lash certification</li>
+                <li>3x lash certification</li>
                 <li>
-                  - Bachelor of Environments (Property) – University of
-                  Melbourne, Australia
+                  Bachelor of Environments (Property) - University of Melbourne,
+                  Australia
                 </li>
               </ul>
               <Typography marginBottom={2} variant="body1">
