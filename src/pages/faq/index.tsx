@@ -7,9 +7,8 @@ const Index = () => {
     <StandardLayout>
       <Banner
         title="Frequently Asked Questions"
-        imageUrl="/img/lash_makup.jpg"
+        imageUrl="/img/lash_close_up.jpg"
         height={500}
-        backgroundPosition="top"
       />
       <Questions />
     </StandardLayout>
