@@ -9,11 +9,7 @@ import GoogleReviews from './home/GoogleReviews';
 const Index = () => {
   return (
     <StandardLayout>
-      <Banner
-        title="Sunday Beauty"
-        imageUrl="/img/lash_close_up.jpg"
-        subTitle="A Sunday well spent brings a week of content!"
-      />
+      <Banner title="Sunday Beauty" imageUrl="/img/lash_close_up.jpg" />
       <AboutUs />
       <Portfolio />
       <Instagram />
