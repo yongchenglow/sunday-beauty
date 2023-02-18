@@ -13,7 +13,7 @@ const Index = () => {
     <StandardLayout>
       <Banner
         title="Contact Us"
-        imageUrl="/img/contact.jpg"
+        imageUrl="/img/contact.jpeg"
         height={500}
         backgroundPosition="50% 30%"
       />
