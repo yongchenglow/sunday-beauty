@@ -11,7 +11,7 @@ const ContactLocation: FunctionComponent = () => {
             width="500"
             height="350"
             id="gmap_canvas"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.560786974462!2d103.82781521475414!3d1.438574098950845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da147d9b74068f%3A0xd418c46064de92ad!2s21%20Canberra%20Dr%2C%20Singapore%20768076!5e0!3m2!1sen!2ssg!4v1676650199927!5m2!1sen!2ssg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7888562754206!2d103.83449702695313!3d1.301595399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1991315227e5%3A0x41e9474e6c556e97!2sMidpoint%20Orchard!5e0!3m2!1sen!2ssg!4v1683025042755!5m2!1sen!2ssg"
             frameBorder="0"
             scrolling="no"
             marginHeight={0}
