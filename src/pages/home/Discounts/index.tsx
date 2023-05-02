@@ -1,6 +1,6 @@
 import { discounts } from '@/src/components/constants';
 import { cinzel } from '@/src/font';
-import { Box, Grid, Typography, useTheme } from '@mui/material';
+import { Box, Typography, useTheme } from '@mui/material';
 import { FormattedMessage, useIntl } from 'react-intl';
 
 const Discounts = () => {
