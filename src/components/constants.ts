@@ -38,15 +38,19 @@ type Item = {
 const items: Item[] = [
   {
     name: { id: 'classic', defaultMessage: 'Classic' },
-    price: '75',
+    price: '98',
+  },
+  {
+    name: { id: 'hybrid.wet.lash', defaultMessage: 'Hybrid/Wet Lash' },
+    price: '108',
   },
   {
     name: { id: 'soft.volume', defaultMessage: 'Soft Volume' },
-    price: '95',
+    price: '128',
   },
   {
     name: { id: 'volume', defaultMessage: 'Volume' },
-    price: '115',
+    price: '148',
   },
   {
     name: { id: 'refill', defaultMessage: 'Refill' },
@@ -56,8 +60,8 @@ const items: Item[] = [
     },
   },
   {
-    name: { id: 'upward.lash', defaultMessage: 'Upward Lash' },
-    price: '10',
+    name: { id: 'upward.lash.kim.k', defaultMessage: 'Upward Lash/Kim K' },
+    price: '15',
   },
   {
     name: { id: 'removal', defaultMessage: 'Removal' },
@@ -65,7 +69,7 @@ const items: Item[] = [
       id: 'free.removal.for.returning.customers',
       defaultMessage: 'Free removal for returning customers',
     },
-    price: '10/20',
+    price: '20',
   },
   {
     name: { id: 'lash.cleanser', defaultMessage: 'Lash Cleanser' },
@@ -73,7 +77,25 @@ const items: Item[] = [
       id: 'comes.with.lash.brush',
       defaultMessage: 'Comes with lash brush',
     },
-    price: '35',
+    price: '38',
+  },
+];
+
+const discounts: MessageDescriptor[] = [
+  {
+    id: 'refer',
+    defaultMessage:
+      '30% Discount for you and your friend if you refer your buddy! (Applicable for New & Returning Clients)',
+  },
+  {
+    id: 'instagram',
+    defaultMessage:
+      '15% discount for the next visit if you post the lash extensions done on your feed (& of course tag us ♥)',
+  },
+  {
+    id: 'google.review',
+    defaultMessage:
+      '15% discount for the next visit if you leave a google review',
   },
 ];
 
@@ -222,4 +244,11 @@ const portfolioImageURLs: string[] = [
   '/img/portfolio10.jpeg',
 ];
 
-export { pages, validationErrorMessages, items, faqs, portfolioImageURLs };
+export {
+  pages,
+  validationErrorMessages,
+  items,
+  faqs,
+  portfolioImageURLs,
+  discounts,
+};

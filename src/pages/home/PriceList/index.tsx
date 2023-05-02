@@ -24,18 +24,19 @@ const PriceList = () => {
           <Typography
             variant="h3"
             sx={{
+              fontFamily: cinzel.style.fontFamily,
               textAlign: 'center',
               marginBottom: theme.spacing(3),
             }}
           >
-            <FormattedMessage id="price.list" defaultMessage="Price List*" />
+            <FormattedMessage id="price.list" defaultMessage="Price List" />
           </Typography>
 
           {items.map((item) => (
             <Grid
               container
               my={3}
-              width={{ sm: '100%', md: theme.spacing(50) }}
+              width={{ sm: '100%', md: theme.spacing(65) }}
               key={item.name.id}
             >
               <Grid item xs={7}>
