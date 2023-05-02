@@ -26,9 +26,9 @@ const linkInfos: LinkInformation[] = [
   },
   {
     id: 'address',
-    url: 'https://goo.gl/maps/X8zDmQHT21c2viFs6',
+    url: 'https://goo.gl/maps/9v4pm33ZiTD3Hpvt9',
     icon: <LocationOnIcon />,
-    text: '21 Canberra Drive, Singapore 768076',
+    text: '220 Orchard Road #04-04C Midpoint Orchard Singapore 238852',
   },
   {
     id: 'instagram',
